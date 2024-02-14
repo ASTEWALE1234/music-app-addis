@@ -58,6 +58,7 @@ export const updateMusic =async (req,res,next)=>{
 
               {title: { $regex: search_text, $options: "i" }},
               {artist: { $regex: search_text, $options: "i" }},
+              {album: { $regex: search_text, $options: "i" }},
               {genre: { $regex: search_text, $options: "i" }},
             ]
           }
